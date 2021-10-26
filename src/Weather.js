@@ -51,14 +51,18 @@ export default function Weather() {
               <li>Wind: {weatherData.wind} mph</li>
             </ul>
           </div>
-
-          <div className="weather-forecast">
-            <div className="row"></div>
-          </div>
         </div>
+
+        <div className="weather-forecast">
+          <div className="row"></div>
+        </div>
+
         <em className="daily-affirmation">daily affirmation</em>
         <div className="daily-affirmation-content">{affirmationContent}</div>
       </div>
+      <p className="credit">
+        <a href="https://app.netlify.com/sites/admiring-bhaskara-b0ce11/overview" target="_blank">open-source</a> code by Niamh Brown 💕
+      </p>
     </div>
   );
 }
