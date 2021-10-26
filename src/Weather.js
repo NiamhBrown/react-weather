@@ -61,7 +61,10 @@ export default function Weather() {
         <div className="daily-affirmation-content">{affirmationContent}</div>
       </div>
       <p className="credit">
-        <a href="https://app.netlify.com/sites/admiring-bhaskara-b0ce11/overview" target="_blank">open-source</a> code by Niamh Brown 💕
+        <a href="https://github.com/NiamhBrown/react-weather" target="_blank">
+          open-source
+        </a>{" "}
+        code by Niamh Brown 💕
       </p>
     </div>
   );
