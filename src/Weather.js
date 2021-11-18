@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import FormattedDate from "./FormattedDate";
+import WeatherInfo from "./WeatherInfo";
 
 import "./Weather.css";
 
@@ -22,37 +22,7 @@ export default function Weather(props) {
   }
   if (weatherData.ready) {
     return (
-      <div className="Weather">
-        <div className="container p-3">
-          <div className="row">
-            <div className="col-6">
-              <input
-                type="search"
-                placeholder="Search..."
-                className="form-control"
-              />
-            </div>
-          </div>
-          <p className="main-temp">{weatherData.temperature}°C</p>
-          <div className="row">
-            <div className="col-6 info-left">
-              <ul>
-                <li>{weatherData.city}</li>
-
-                <FormattedDate date={weatherData.date} />
-              </ul>
-            </div>
-
-            <div className="col-6 info-right">
-              <ul>
-                <li className="text-capitalize">{weatherData.description}</li>
-                <li>Humidity: {weatherData.humidity}%</li>
-                <li>Wind: {weatherData.wind} mph</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+      <WeatherInfo data={weatherData}/>
     );
   } else {
     const apiKey = "e4c991b27b566dc4b5b311b6f8d9ac5c";
