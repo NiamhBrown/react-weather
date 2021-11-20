@@ -4,17 +4,7 @@ import FormattedDate from "./FormattedDate";
 export default function WeatherInfo(props) {
   return (
     <div className="WeatherInfo">
-      <div className="Weather">
-        <div className="container p-3">
-          <div className="row">
-            <div className="col-6">
-              <input
-                type="search"
-                placeholder="Search..."
-                className="form-control"
-              />
-            </div>
-          </div>
+      
 
           <p className="main-temp">{props.data.temperature}°C</p>
           <div className="row">
@@ -35,7 +25,6 @@ export default function WeatherInfo(props) {
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      
   );
 }
