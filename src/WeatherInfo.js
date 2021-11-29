@@ -5,7 +5,8 @@ export default function WeatherInfo(props) {
   return (
     <div className="WeatherInfo">
       <img
-        src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+        src={props.data.iconUrl}
+        alt={props.data.description}
         className="icon mt-3"
       />
       <p className="main-temp">{props.data.temperature}°C </p>
