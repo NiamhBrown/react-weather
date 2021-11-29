@@ -4,7 +4,12 @@ import FormattedDate from "./FormattedDate";
 export default function WeatherInfo(props) {
   return (
     <div className="WeatherInfo">
-      <p className="main-temp">{props.data.temperature}°C</p>
+      <img
+        src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+        className="icon mt-3"
+      />
+      <p className="main-temp">{props.data.temperature}°C </p>
+
       <div className="row">
         <div className="col-6 info-left">
           <ul>

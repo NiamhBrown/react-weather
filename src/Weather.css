@@ -1,24 +1,28 @@
 .Weather {
-    display: block;
-    margin: 30px auto;
-    max-width: 400px;
-    background-color:rgb(151, 126, 130);
-    background-image: url(https://i.pinimg.com/originals/fa/2f/09/fa2f0902fbc859459ac839c1eb2ea175.png);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    
+  display: block;
+  margin: 30px auto;
+  max-width: 400px;
+  background-color: rgb(151, 126, 130);
+  background-image: url(https://i.pinimg.com/originals/fa/2f/09/fa2f0902fbc859459ac839c1eb2ea175.png);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
 }
 
 .Weather ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .Weather .main-temp {
-    text-align: center;
-    font-size: 60px;
-    font-weight: 500;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 500;
+}
+.Weather .icon {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 }
 .Weather .info-right {
-    text-align: right;
+  text-align: right;
 }
