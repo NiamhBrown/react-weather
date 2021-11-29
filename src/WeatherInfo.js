@@ -10,7 +10,7 @@ export default function WeatherInfo(props) {
         alt={props.data.description}
         className="icon mt-3"
       />
-      <WeatherTemperature celsius={props.data.temperature}/>
+      <WeatherTemperature celsius={props.data.temperature} />
 
       <div className="row">
         <div className="col-6 info-left">

@@ -18,6 +18,9 @@
   font-size: 60px;
   font-weight: 500;
 }
+.Weather .main-temp .units {
+    font-size: 15px;
+}
 .Weather .icon {
   display: block;
   margin: 0 auto;
